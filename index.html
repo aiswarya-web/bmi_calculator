@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="bmlCalc">
+        <h1>BMI Calculator</h1>
+        <div class="content1">
+            <p class="textAge">Age</p>
+            <input type="number" id="age">
+        </div>
+        <div class="content2">
+            <input type="radio" id="male">
+            <label class="cont2" name="gender" for="male">Male</label>
+
+
+            <input type="radio" id="female">
+            <label class="cont2" name="gender" for="female">Female</label>
+
+            <input type="radio" id="other">
+            <label class="cont2" name="gender" for="other">Other</label>
+
+        </div>
+        <div class="content3">
+            <div class="contheight">
+                <p class="text">Height</p>
+                <input type="number" id="height">
+            </div>
+            <div class="contweight">
+                <p class="text">Weight</p>
+                <input type="number" id="weight">
+            </div>
+        </div>
+        <div class="btndiv">
+            <button id="btn" onclick="calculateBMI()" class="calculate">Calculate</button>
+            <button id="btnclear" onclick="clearForm()" class="clear">Clear</button>
+        </div>
+        <div id="bmiResult">
+            <p id="bmiValue"></p>
+            <p id="bmiCategory"></p>
+        </div>
+
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
