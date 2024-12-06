@@ -130,3 +130,11 @@ h1{
     font-size: 18px;
     color: #fff;
 }
+@media (max-width:760px) {
+    .content3{
+        display: inline;
+    }
+    .text{
+        text-align: center;
+    }
+}
